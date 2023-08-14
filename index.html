@@ -1,0 +1,2059 @@
+<html lang="en">
+<body class="loading"><head>
+      <title>Natalia Gkotovou | Software Engineer</title>
+      <meta name="author" content="Natalia Gkotovou / Ναταλία Γκότοβου / Ναταλια Γκοτοβου">
+      <meta name="description" content="Personal Portfolio of Natalia Gkotovou (Ναταλία Γκότοβου / Ναταλια Γκοτοβου)">
+      <meta name="keywords" content="Natalia Gkotovou, Ναταλία Γκότοβου, Ναταλια Γκοτοβου, Natalia, Ναταλία, Ναταλια, Gkotovou, Γκότοβου, Γκοτοβου">
+      <link rel="icon" type="image/ico" href="F:\CV\CV\logo.ico">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="F:\CV\CV\slickslider\slick.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="F:\CV\CV\slickslider\slick.css">
+    
+      <style>
+        /* fonts */
+        @font-face {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: normal;
+          src: url("F:/CV/CV/fonts/Montserrat-Regular.ttf") format("opentype");
+        }
+      
+        .Montserrat {
+          font-family: Montserrat;
+        }
+
+        @font-face {
+          font-family: Montserrat-Light;
+          font-style: normal;
+          font-weight: normal;
+          src: url("F:/CV/CV/fonts/Montserrat-Light.ttf") format("opentype");
+        }
+
+        .Montserrat-Light {
+          font-family: Montserrat-Light;
+        }
+
+        @font-face {
+          font-family: Italiana;
+          font-style: normal;
+          font-weight: normal;
+          src: url("F:/CV/CV/fonts/Italiana-Regular.ttf") format("opentype");
+        }
+
+        .Italiana {
+          font-family: Italiana;
+        }
+
+        /* colors */
+        .blackFontColor {
+          color: #313942;
+        }
+
+        .blackBackgroundColor {
+          background-color: #313942;
+        }
+
+        .lightBeigeFontColor {
+          color: #F2F2F0;
+        }
+
+        .lightBeigeBackgroundColor {
+          background-color: #F2F2F0;
+        }
+
+        .beigeFontColor {
+          color: #ECEAE5;
+        }
+
+        .beigeBackgroundColor {
+          background-color: #ECEAE5;
+        }
+
+        .darkerBeigeFontColor {
+          color: #DDDBD7;
+        }
+
+        .darkerBeigeBackgroundColor {
+          background-color: #DDDBD7;
+        }
+
+        .whiteFontColor {
+          color: white;
+        }
+
+        .whiteBackgroundColor {
+          background-color: white;
+        }
+
+        .grayFontColor {
+          color: #8D9092;
+        }
+
+        .grayBackgroundColor {
+          background-color: #8D9092;
+        }
+
+        .goldenFontColor {
+          color: #A57910;
+          text-transform: uppercase;
+        }
+
+        .goldenBackgroundColor {
+          background-color: #A57910;
+        }
+
+        /* general */
+        html {
+          scroll-behavior: smooth;
+        }
+
+        * {
+          padding: 0 !important;
+          color: #313942;
+          font-family: Montserrat;
+        }
+
+        body {
+          background-color: #ECEAE5;
+          overflow-x: hidden;
+        }
+
+        a:hover,
+        a {
+          text-decoration: none;
+        }
+
+        .align-right {
+          text-align: right;
+        }
+
+        .panel {
+          opacity: 0;
+          position: relative;
+          transform: translateY(10%);
+          transition: all 1.2s;
+        }
+
+        .panel-fade-in {
+          opacity: 1;
+          transform: translate(0);
+        }
+
+        #back-to-top {
+          position: fixed;
+          right: 20px;
+          bottom: 30px;
+          backdrop-filter: blur(33px);
+          background-color: rgb(236 234 229 / 43%) !important;
+          opacity: 0;
+          pointer-events: none;
+          transition: .5s;
+          padding: 10px 7px !important;
+        }
+
+        #back-to-top img {
+          width: 23px;
+        }
+
+        .scrolled #back-to-top {
+          opacity: 1;
+          pointer-events: auto;
+          transition: .5s;
+        }
+
+        ::-webkit-scrollbar-track
+        {
+          background-color: transparent;
+        }
+
+        ::-webkit-scrollbar
+        {
+          width: 8px;
+          background-color: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb
+        {
+          background-color: #313942;	
+          border-radius: 5px;
+        }
+
+
+        /* fonts */
+        p {
+            font-size: 16px;
+        }
+
+        /* menu */
+
+        #menu {
+          background-color: transparent;
+          transition: .3s;
+          position: fixed;
+          width: 100%;
+          z-index: 1;
+        }
+
+
+
+        #menu-items {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        .scrolled #menu {
+          backdrop-filter: blur(33px);
+          background-color: rgb(236 234 229 / 43%) !important;
+          transition: .3s;
+          box-shadow: 0 0 30px -28px black;
+        }
+
+        #logo {
+          width: 73px;
+        }
+
+        #menu-items a {
+          display: block;
+          color: #313942;
+          text-align: center;
+        }
+
+        .menu-link {
+          background-image: linear-gradient(transparent 0%, transparent 90%, #313942 80%, #313942 90%) !important;
+          background-repeat: no-repeat !important;
+          background-size: 0% 22% !important;
+          background-position-x: right !important;
+          transition: background-size 0.4s !important;
+          width: fit-content;
+          display: block;
+          height: fit-content;
+          background-position-y: bottom !important;
+          margin-bottom: 5px;
+        }
+
+        .menu-link:hover {
+          background-size: 100% 22% !important;
+          background-position-x: left !important;
+        }
+
+        /* home */
+        .top-section {
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-end;
+        }
+
+        .main-image-container img {
+          width: 100%;
+          object-fit: contain;
+          border-radius: 50%;
+          max-height: 43vh;
+          max-width: 43vh;
+        }
+
+        .main-image-container {
+          height: 350px;
+          margin-bottom: -79px;
+          width: 350px;
+          border-radius: 50%;
+          border: 8px solid #F2F2F0;
+          max-height: 43vh;
+          max-width: 43vh;
+        }
+
+        .my-info h2 {
+          border-left: 1px solid #dddbd7;
+          padding-left: 10px !important;
+        }
+
+        .my-info {
+          padding-top: 100px !important;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .contact-icons {
+          display: inline-flex;
+          margin-top: 18px;
+        }
+
+        .contact-icon {
+          width: 54px;
+          margin-top: 4px;
+          margin-right: 12px;
+          opacity: 0.6;
+          transition: .3s;
+        }
+
+        .linkedin-icon:hover {
+          opacity: 0.9;
+          transition: .3s;
+        }
+
+        .contact-icon:hover {
+          opacity: 1;
+          transition: .3s;
+        }
+
+        .linkedin-icon {
+          opacity: 0.6;
+          transition: .3s;
+          width: 67px;
+        }
+
+        .first-image-on-scroll {
+          -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+          position: absolute;
+          right: 31.7vw;
+          top: -145px;
+        }
+
+        .first-image-on-scroll svg {
+          width: 20vw;
+          height: 16vw;
+          transform: rotate(10deg);
+          display: none;
+        }
+
+        body .first-image-on-scroll {
+          opacity: 0;
+          transition: .3s;
+        }
+
+        body.scrolled .first-image-on-scroll {
+          transition: .3s;
+          opacity: 1;
+        }
+
+        /* about-me */
+
+        .container {
+          max-width: 950px;
+          width: 100%;
+          padding: 50px 40px;
+          margin-left: 0;
+          border-radius: 12px;
+        }
+
+        .container .topic {
+          font-size: 30px;
+          font-weight: 500;
+          margin-bottom: 20px;
+        }
+
+        .content input {
+          display: none;
+        }
+
+        .content .list {
+          flex-direction: row;
+          position: relative;
+          width: fit-content;
+          margin-top: 22px;
+          border: 2px solid #DDDBD7;
+          border-radius: 60px;
+          margin-bottom: 60px;
+        }
+
+        .content .list label {
+          cursor: pointer;
+          margin-right: 20px;
+          margin-left: 20px;
+          height: 53px;
+          width: fit-content;
+          padding-top: 19px !important;
+          padding-left: 12px !important;
+          padding-right: 12px !important;
+          transition: all 0.5s ease;
+          z-index: 1;
+          position: relative;
+        }
+
+        .content .slider {
+          position: absolute;
+          left: 6px;
+          top: 5px;
+          height: 50px;
+          width: 100%;
+          border-radius: 60px;
+          transition: all 0.8s ease;
+          background: #DDDBD7;
+        }
+
+        #front-end:checked ~ .list .slider {
+          left: 6px;
+          width: 298px;
+        }
+
+        #wordpress:checked ~ .list .slider {
+          width: 164px;
+          left: 307px;
+        }
+
+        #woocommerce:checked ~ .list .slider {
+          width: 210px;
+          left: 480px;
+        }
+
+        .content .text {
+          display: none;
+        }
+
+        /* .container .text p {
+          text-align: justify;
+        } */
+
+        #front-end:checked ~ .text-content .front-end,
+        #wordpress:checked ~ .text-content .wordpress,
+        #woocommerce:checked ~ .text-content .woocommerce {
+          display: block;
+        }
+
+        .title {
+          margin-bottom: 23px !important;
+        }
+
+        #about-me {
+          padding-top: 100px !important;
+          padding-bottom: 130px !important;
+          position: relative;
+        }
+
+        .background-text {
+          padding-left: 73% !important;
+          margin-top: 20px;
+        }
+
+        /* my-portfolio */
+        #my-portfolio {
+          padding-top: 140px !important;
+          padding-bottom: 140px !important;
+        }
+
+        .eshop-label {
+          backdrop-filter: blur(33px);
+          background-color: rgb(236 234 229 / 43%) !important;
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding-left: 28px !important;
+          padding-right: 28px !important;
+          padding-top: 11px !important;
+          letter-spacing: 1.3;
+          padding-bottom: 11px !important;
+        }
+
+        .title-description p {
+          font-size: 0.875rem;
+          opacity: 1;
+          margin-bottom: 0;
+          margin-top: 0.5px;
+        }
+
+        .top-item-info {
+          margin-bottom: 25px;
+        }
+
+        .slick-slide {
+          height: fit-content;
+        }
+
+        #portfolio-info {
+          padding-left: 4vw !important;
+        }
+
+        .image-view {
+          position: relative;
+          overflow: hidden;
+        }
+
+        a:hover .image-view img {
+          transform: scale(1.03);
+          transition: .5s;
+        }
+
+        .image-view img {
+          transform: scale(1);
+          transition: .5s;
+        }
+
+        .view-project {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          transition: .3s;
+          padding-left: 28px !important;
+          padding-right: 28px !important;
+          padding-top: 11px !important;
+          letter-spacing: 1.3;
+          padding-bottom: 11px !important;
+        }
+
+        a:hover .view-project {
+          opacity: 1;
+          transition: .3s;
+        }
+
+        .slick-prev,
+        .slick-next {
+          opacity: 0 !important;
+          transition: .5s;
+        }
+
+        #projects-slider:hover .slick-prev,
+        #projects-slider:hover .slick-next {
+          opacity: 1 !important;
+          transition: .5s;
+        }
+
+        #projects-slider {
+          border-left: 1px solid #dddbd7;
+          position: relative;
+          margin-left: 4%;
+        }
+
+        .rhombus {
+          width: 10px;
+          margin-right: 10px;
+          margin-top: 6.5px;
+        }
+
+        .slick-next {
+          position: absolute;
+          right: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 99999;
+          height: 65px;
+          width: 65px;
+          /* color: #96694C; */
+          /* color: #D4952E; */
+          background-position: center;
+          background-image: url(\slider_icon.svg);
+          color: transparent;
+          transform: rotate(90deg);
+          background-color: transparent;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          border: 1px solid #A57910;
+          backdrop-filter: blur(2px);
+          background-color: rgb(236 234 229 / 10%) !important;
+        }
+
+        .slick-prev {
+          position: absolute;
+          left: 20px;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          z-index: 99999;
+          height: 65px;
+          width: 65px;
+          background-position: center;
+          background-image: url(\slider_icon.svg);
+          color: transparent;
+          transform: rotate(-90deg);
+          background-color: transparent;
+          background-repeat: no-repeat;
+          border-radius: 50%;
+          border: 1px solid #A57910;
+          backdrop-filter: blur(2px);
+          background-color: rgb(236 234 229 / 10%) !important;
+        }
+
+        .title-description h5 {
+          margin-bottom: 0;
+          margin-top: 6px;
+        }
+
+        .portfolio-text {
+          padding-top: 22px !important;
+          max-width: 456px;
+        }
+
+        .slick-slide img {
+          width: 100%;
+        }
+
+        .pagingInfo {
+          padding-left: calc(4% + 9px) !important;
+          font-size: 17px;
+          margin-bottom: 2px;
+          display: block;
+        }
+
+        #projects-slider a {
+          display: block;
+          margin-right: 9px;
+          margin-left: 9px;
+        }
+
+        /* my-background */
+        .items {
+          position: relative;
+          width: 100%;
+          display: flex;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          transition: all 0.2s;
+          will-change: transform;
+          user-select: none;
+          cursor: pointer;
+          margin-top: 125px;
+          margin-bottom: 20px;
+      }
+
+      .list {
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+
+      .list-row {
+        display: flex;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        align-items: flex-start;
+      }
+
+      .items::-webkit-scrollbar {
+        display: none;
+      }
+
+      .item {
+        width: 42vw;
+        min-width: 700px;
+        margin-left: 4vw;
+        margin-right: 1vw;
+        padding-right: 5vw !important;
+      }
+
+      .items {
+        cursor: url(drag.svg) 40 1, auto !important;
+      }
+
+.item a {
+  background-color: #F2F2F0;
+  width: 200px;
+    display: flex;
+    height: 214px;
+    border-top-left-radius: 96px;
+    border-top-right-radius: 96px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.item a img {
+    margin-left: 0;
+    margin-top: 23px;
+}
+
+.item a img {
+    width: 155px;
+}
+
+.item h1 {
+  margin-top: -29px;
+}
+
+.item3 .right-box img {
+  width: 118px;
+}
+
+        .nav-tabs li:first-child a.active .animation-row,
+        a.active .animation-row {
+          width: 156px;
+          transition: 0.8s;
+          margin-left: 12px;
+        }
+
+        .all-years {
+          margin-top: -60px;
+        }
+
+        .tab-content img {
+          max-width: 125px;
+          max-height: 125px;
+        }
+
+        .tab-link {
+          width: 170px;
+          height: 170px;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          border-radius: 50%;
+          position: relative;
+          z-index: 1;
+        }
+
+        .tab-content h2 {
+          font-size: 70px;
+        }
+
+        a.active h4 {
+          transition: .3s;
+          opacity: 1;
+          transform: scale(1.6);
+          margin-left: 8px;
+          margin-bottom: 0;
+          margin-right: 25px;
+        }
+
+        .title-desc small {
+          transform: scale(0.8);
+          transition: .3s;
+          opacity: 0.8;
+        }
+
+        a.active small {
+          transform: scale(1);
+          transition: .3s;
+          opacity: 1;
+        }
+
+        .title-desc h4 {
+          margin-bottom: 0;
+        }
+
+        .nav-tabs a {
+          display: inline-flex;
+        }
+
+        .nav-tabs li:first-child .animation-row {
+          width: 0;
+        }
+
+        .nav-tabs {
+          border-bottom: 0;
+          margin-bottom: 70px;
+          margin-top: 70px;
+          position: relative;
+          z-index: 1;
+
+        }
+
+        .animation-row {
+          margin-left: 10px;
+          margin-right: 10px;
+          height: 1px;
+          display: block;
+          width: 50.9px;
+          margin-top: 13px;
+          opacity: 0.7;
+          margin-bottom: 5px;
+          transition: 0.8s;
+        }
+
+        #year2 ul {
+          padding-left: 18px !important;
+        }
+
+        .nav-tabs a h4 {
+          transition: 0.8s;
+          opacity: 0.7;
+          transform: scale(0.8);
+        }
+
+        .nav-tabs a.active h4 {
+          transition: 0.8s;
+          opacity: 1;
+          transform: scale(1.3);
+        }
+
+        .circle {
+          height: 170px;
+          margin-bottom: -170px;
+          width: 170px;
+          border-radius: 100%;
+          box-shadow: 0 1px 0 0 rgba(236, 234, 229, 0.25), 
+                      0 -1px 0 0 rgba(49, 57, 66, 0.25), 
+                      1px 0 0 0 rgba(49, 57, 66, 0.25), 
+                      -1px 0 0 0 rgba(49, 57, 66, 0.25), 
+                      1px -1px 0 0 rgba(49, 57, 66, 0.5), 
+                      -1px 1px 0 0 rgba(236, 234, 229, 0.5), 
+                      1px 1px 0 0 rgba(221, 219, 215, 0.75), 
+                      -1px -1px 0 0 rgba(221, 219, 215, 0.75);
+          animation: rotateThis 3s linear infinite;
+        }
+
+        @keyframes rotateThis {
+          from {
+            transform: rotate(0deg) scale(1);
+          }
+          to {
+            transform: rotate(360deg) scale(1);
+          }
+        }
+
+        .title-desc {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
+        #my-background {
+          padding-top: 105px !important;
+          padding-bottom: 130px !important;
+        }
+
+        /* footer */
+
+        .footer-title {
+          color: #DDDBD7;
+          margin-bottom: 7px !important;
+        }
+
+        .footer-link {
+          font-size: 15px;
+        }
+
+        .copyright {
+          font-size: 14px;
+        }
+
+        .first-footer-col {
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 30px;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+        }
+
+        .first-footer-col p {
+          margin-bottom: 0 !important;
+        }
+
+        .second-footer-col,
+        .third-footer-col {
+          border-left: 1px solid #dddbd7;
+          padding-left: 10px !important;
+          margin-bottom: 30px;
+        }
+
+        .footer-link {
+          background-image: linear-gradient(transparent 0%, transparent 90%, white 80%, white 90%) !important;
+          background-repeat: no-repeat !important;
+          background-size: 0% 52% !important;
+          background-position-x: right !important;
+          transition: background-size 0.4s !important;
+          width: fit-content;
+          display: block;
+          background-position-y: bottom !important;
+          margin-bottom: 11px;
+        }
+
+        .footer-link:hover {
+          background-size: 100% 52% !important;
+          background-position-x: left !important;
+          color: white !important;
+        }
+
+        footer {
+          padding-top: 50px !important;
+          padding-bottom: 18px !important;
+        }
+
+        footer #logo-link img {
+          filter: invert(100%);
+        }
+
+        /* rest */
+
+        /* fonts */
+          h1 {
+            font-size: 55px;
+            line-height: 1;
+            margin-top: 9px;
+          }
+
+          h2 {
+            font-size: 45px;
+          }
+
+          h3 {
+            font-size: 35px;
+          }
+
+          h4 {
+            font-size: 25px;
+          }
+
+          h5 {
+            font-size: 18px;
+          }
+
+          h6 {
+            font-size: 17px;
+          }
+
+          p {
+            font-size: 15px;
+            margin-bottom: 0 !important;
+          }
+
+        /* */
+
+        #menu #logo-link {
+          padding-top: 6px !important;
+          padding-bottom: 6px !important;
+        }
+
+        .croppedContent {
+          width: 92%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+
+        @media (max-width: 992px) {
+          .displaydesktop {
+            display: none;
+          }
+
+          #my-background li::before {
+            content: "";
+            position: absolute;
+            right: -40px !important;
+            bottom: 33px;
+            right: 0;
+            margin: auto;
+            height: 6px;
+            width: 59px;
+            border-bottom: 1px solid #c4c1ba;
+          }
+
+          #my-background #first-tab::before {
+            display: none;
+          }
+
+          #my-background li {
+            position: relative;
+          }
+
+          #my-background .tab-content {
+            width: 92%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          #my-background .nav-tabs {
+            padding-left: 4% !important;
+            padding-right: 4% !important;
+          }
+
+          .all-years-container {
+            width: 100%;
+          }
+
+          .title-description p {
+            font-size: 13px;
+          }
+
+          .portfolio-text {
+            padding-right: 10% !important;
+          }
+
+          .slick-next,
+          .slick-prev {
+            background-size: 18px;
+            height: 40px;
+            width: 40px;
+          }
+
+          .background-text p {
+            max-width: 448px;
+            margin-left: auto;
+          }
+
+          
+          .slick-prev, .slick-next {
+            opacity: 1 !important;
+          }
+
+          #back-to-top img {
+            width: 19px;
+          }
+
+          #back-to-top {
+            right: 14px;
+            bottom: 14px;
+            padding: 7px 4px !important;
+          }
+
+          #my-portfolio {
+            padding-top: 97px !important;
+            padding-bottom: 97px !important;
+          }
+
+          .eshop-label {
+            font-size: 13px;
+            padding-left: 17px !important;
+            padding-right: 17px !important;
+            padding-top: 9px !important;
+            padding-bottom: 9px !important;
+          }
+
+          .nav-tabs {
+            margin-bottom: 45px;
+            margin-top: 100px;
+          }
+
+          .background-content::-webkit-scrollbar {
+            display: none;
+          }
+
+          .nav-tabs {
+            display: flex !important;
+            width: max-content;
+            flex-wrap: wrap;
+            flex-direction: row-reverse !important;
+          }
+
+          .background-content {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            width: 100%;
+          }
+
+          .nav-tabs li {
+            display: inline-block;
+            margin-right: 26px;
+          }
+
+          .nav-tabs a.active h4,
+          .nav-tabs a h4 {
+            transform: scale(0.8);
+            margin: 0;
+            text-align: center;
+          }
+
+          .my-info h2 {
+            border-left: 0;
+            text-align: center;
+            padding-left: 0 !important;
+          }
+
+          .pagingInfo {
+            font-size: 15px;
+            margin-bottom: 9px;
+          }
+
+          .year-container {
+            max-width: 730px;
+          }
+
+          .copyright {
+            width: 92%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          .tab-content h3 {
+            margin-top: 35px; 
+          }
+
+          .content .list label {
+            padding-top: 21px !important;
+          }
+
+          .content .list {
+            border-radius: 33px;
+            margin-top: 38px;
+            margin-bottom: 32px;
+          }
+
+          .nav {
+            display: block;
+          }
+
+          .top-section {
+            padding-top: 110px !important;
+          }
+
+          #menu-items a {
+            font-size: 15px;
+          }
+
+          #menu #logo-link {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+          }
+
+          #front-end:checked ~ .list .slider {
+            left: 6px;
+            top: 5px;
+            width: 268px;
+          }
+
+          #wordpress:checked ~ .list .slider {
+            width: 268px;
+            top: 65px;
+            left: 6px;
+          }
+
+          #woocommerce:checked ~ .list .slider {
+            width: 268px;
+            top: 128px;
+            left: 6px;
+          }
+
+          .content .list label {
+            display: block;
+          }
+
+          .menu-portfolio {
+            margin-left: auto;
+          }
+
+          #logo {
+            width: 56px;
+          }
+
+          .slider-container {
+            margin-top: 35px;
+          }
+
+          .contact-info {
+            height: fit-content;
+          }
+
+          .main-image-container {
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 75vw;
+            max-width: 75vw;
+          }
+
+          .main-image-container img {
+            max-height: 75vw;
+            max-width: 75vw;
+          }
+
+          .background-text {
+            padding-left: 10% !important;
+          }
+
+          .contact-icons {
+            width: 100%;
+            justify-content: center;
+          }
+
+          .my-info {
+            display: flex;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+          }
+
+          #menu-items {
+            margin: 0;
+            width: 100%;
+            height: 69px;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 16px;
+            list-style: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 9px !important;
+          }
+
+          #menu {
+            padding-left: 12px !important;
+            padding-right: 12px !important;
+          }
+        }
+
+        @media (min-width: 992px) {
+          /* fonts */
+          h1 {
+            font-size: 6.771vw;
+          }
+
+          h2 {
+            font-size: 65px;
+          }
+
+          h3 {
+            font-size: 55px;
+          }
+
+          h4 {
+            font-size: 25px;
+          }
+
+          h5 {
+            font-size: 20px;
+          }
+
+          h6 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+          /* */
+
+          .displayflex {
+            display: flex;
+          }
+
+          .displaymobile {
+            display: none;
+          }
+
+          .left-box {
+            min-width: 350px;
+          }
+
+          .nav-tabs {
+            margin-top: 110px !important;
+            min-width: 827px;
+          }
+
+          .year-container {
+            min-height: 300px;
+          }
+
+          .background-text {
+            padding-left: 55% !important;
+          }
+
+          footer {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+          }
+
+          .content .list {
+            margin-top: 42px;
+          }
+
+          .img-wrap-container {
+            min-width: 260px;
+          }
+
+          .year-container {
+            min-width: 860px;
+          }
+
+          .slider-container {
+            width: 55.333333%;
+            max-width: 55.333333%;
+          }
+
+          .second-footer-col,
+          .third-footer-col {
+            padding-left: 20px !important;
+            margin-bottom: 0;
+          }
+
+          .footer-link {
+            font-size: 16px;
+          }
+
+          .circle {
+            height: 200px;
+            margin-bottom: -200px;
+            width: 200px;
+          }
+
+          .tab-content img {
+            max-width: 150px;
+            max-height: 150px;
+          }
+
+          .tab-link {
+            width: 200px;
+            height: 200px;
+          }
+
+          .top-section {
+            height: 52vh;
+          }
+
+          .tab-pane p {
+            padding-right: 25% !important;
+          }
+
+          .slider-container {
+            margin-left: 3%;
+          }
+
+          .my-info {
+            height: 48vh;
+          }
+
+          #menu-items a {
+            padding-top: 28px !important;
+          }
+
+          .title-description p {
+            opacity: 0;
+            transition: .3s;
+          }
+
+          a:hover p {
+            opacity: 1;
+            transition: .3s;
+          }
+
+          .menu-item {
+            width: 130px;
+          }
+
+          .first-footer-col {
+            margin-bottom: 0;
+          }
+        }
+
+        @media (min-width: 1400px) {
+          .item {
+            min-width: 42vw;
+          }
+
+          .content .list {
+            margin-top: -42px;
+          }
+
+          .nav-tabs {
+            min-width: 980px;
+          }
+
+          .nav-tabs li:first-child a.active .animation-row,
+          a.active .animation-row {
+            width: 256px;
+          }
+
+          .nav-tabs {
+            margin-top: 110px !important;
+          }
+
+          .background-text {
+           padding-left: 73% !important;
+          }
+        }
+
+        @media (min-width: 1920px) {
+          /* fonts */
+          h1 {
+            font-size: 130px;
+          }
+
+          h2 {
+            font-size: 65px;
+          }
+
+          h3 {
+            font-size: 55px;
+          }
+
+          h4 {
+            font-size: 25px;
+          }
+
+          h5 {
+            font-size: 20px;
+          }
+
+          h6 {
+            font-size: 18px;
+          }
+
+          p {
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+
+      </style>
+    </head>
+
+    <body>
+      <main>
+        <div id="menu">
+          <div id="menu-items" class="croppedContent displayflex">
+            <div class="menu-item">
+              <a href="#home" class="menu-link">Home</a>
+            </div>
+            <div class="menu-item">
+              <a href="#about-me" class="menu-link">About me</a>
+            </div>
+            <div class="menu-item">
+              <a href="#" id="logo-link">
+                <img src="F:\CV\CV\logo.png" alt="logo" id="logo">
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="#my-portfolio" class="menu-link menu-portfolio">
+                <span class="displaydesktop">My portfolio</span>
+                <span class="displaymobile">Portfolio</span>
+              </a>
+            </div>
+            <div class="menu-item">
+              <a href="#my-background" class="menu-link">
+                <span class="displaydesktop">My background</span>
+                <span class="displaymobile">Background</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- home -->
+        <div id="home">
+          <div class="top-section displayflex">
+              <div class="main-image-container">
+                <img src="F:\CV\CV\cv.jpg" alt="img">
+              </div>
+          </div>
+          <div class="lightBeigeBackgroundColor my-info displayflex">
+            <h2 class="Italiana">Natalia Gkotovou</h2>
+            <h6>BRING YOUR <b>DIGITAL VISION</b> TO <b>LIFE</b></h6>
+            <div class="contact-me">
+              <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/natalia-gkotovou" target="_blank">
+                  <img src="F:\CV\CV\linkedin.svg" alt="icon" class="linkedin-icon">
+                </a>
+                <a href="mailto:n.gkotovou@gmail.com">
+                  <img src="F:\CV\CV\email.svg" alt="icon" class="contact-icon">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- about-me -->
+        <div id="about-me" class="lightBeigeBackgroundColor">
+          <div class="image-on-scroll first-image-on-scroll">
+            <svg xmlns="http://www.w3.org/2000/svg" width="377.455" height="378.902" viewBox="0 0 377.455 378.902" id="svgPath">
+              <path id="pathToReveal" class="normal" data-name="Path 128" d="M11421.915,4299s166.534,404.552-351.271,376.821" transform="translate(-11070.618 -4298.81)" fill="none" stroke="#313942" stroke-width="1" stroke-dasharray="2000" style="stroke-dasharray: 650.949, 650.949; stroke-dashoffset: 192.3;"></path>
+            </svg>
+          </div>
+          <div class="croppedContent">
+            <h1 class="Italiana align-right">About me</h1>
+            <div class="background-text align-right">
+              <p>These are the technologies I am working with & hold a strong passion for!</p>
+            </div>
+            <div class="container panel">
+              <div class="content">
+                  <input type="radio" name="slider" checked id="front-end">
+                  <input type="radio" name="slider" id="wordpress">
+                  <input type="radio" name="slider" id="woocommerce">
+      
+                  <div class="list displayflex">
+                      <label for="front-end" class="front-end">
+                          <h5>Front-end development</h5>
+                      </label>
+                      <label for="wordpress" class="wordpress">
+                          <h5>Wordpress</h5>
+                      </label>
+                      <label for="woocommerce" class="woocommerce">
+                          <h5>Woocommerce</h5>
+                      </label>
+                      <div class="slider"></div>
+                  </div>
+      
+                  <div class="text-content">
+                      <div class="front-end text">
+                          <h3 class="title Italiana">Front-end development</h3>
+                          <p>
+                            Specialized in developing high-quality, responsive and scalable websites, web apps and e-commerce platforms. 
+                            Ensuring a seamless user experience across different browsers & devices, troubleshooting, performing speed 
+                            optimizations & adhering to current best practices and accessibility standards.
+                          </p>
+                      </div>
+                      <div class="wordpress text">
+                          <h3 class="title Italiana">Wordpress</h3>
+                          <p>
+                            Crafting and managing dynamic WordPress websites and custom themes. 
+                            Elevating established themes and plugins to precisely match each project's prerequisites.
+                            Working with designers and clients to transform design files into captivating websites.
+                            Staying up to date with industry trends, best practices and cutting-edge technologies.
+                          </p>
+                      </div>
+                      <div class="woocommerce text">
+                          <h3 class="title Italiana">Woocommerce</h3>
+                          <p>
+                            Developing feature-rich online stores with user-friendly interfaces that integrate product showcases, 
+                            distinctive characteristics & secure payment gateways. 
+                            Optimizing performance for shopping experiences and ensuring responsive layouts across devices that 
+                            drive customer engagement and revenue growth.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- my-portfolio -->
+        <div id="my-portfolio" class="col-lg-12 displayflex panel">
+          <div class="col-lg-5" id="portfolio-info">
+              <h1 class="Italiana">My<br>portfolio</h1>
+              <div class="portfolio-text">
+                <p>Here are some of the websites & e-shops that I am delighted to have contributed to!</p>
+              </div>
+          </div>
+          <div class="col-lg-7 slider-container">
+            <span class="pagingInfo Montserrat-Light"></span>
+            <div id="projects-slider">
+              <div>
+                <a href="https://domesresorts.com/domesnoruzkassandra/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-1.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Domes Resorts</h5>
+                    <p class="grayFontColor">A website for the fastest-growing lifestyle hospitality group in Greece.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://elasticarchitects.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-2.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Elastic</h5>
+                    <p class="grayFontColor">A website for a global award-winning firm of architects & interior designers.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://kidot.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-3.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Kidot</h5>
+                    <p class="grayFontColor">A website for an award-winning family experience agency.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://ez-gro.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-4.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Ez Gro</h5>
+                    <p class="grayFontColor">A website that promotes Canadian agricultural science in Greece.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://alero.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-5.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Alero</h5>
+                    <p class="grayFontColor">A website for a boutique hotel in Skyros, Greece.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://4legs.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-6.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                    <small class="blackFontColor eshop-label"><b>E-SHOP</b></small>
+                  </div>
+                  <div class="title-description">
+                    <h5>4legs</h5>
+                    <p class="grayFontColor">An e-shop with handmade pet furniture & accessories.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://hypertria.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-7.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Hyper Tria</h5>
+                    <p class="grayFontColor">A website for Tria, a branding agency.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://arcadionbistrot.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-11.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Arcadion Bistrot</h5>
+                    <p class="grayFontColor">A website for gaining experiences in a hotel in Corfu, Greece.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://drpagkalos.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-8.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Georgios Pagkalos</h5>
+                    <p class="grayFontColor">A website promoting science in the service of beauty & health.</p>
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="https://galaxyportoheli.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-14.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Galaxy Hotel</h5>
+                    <p class="grayFontColor">A website for a hotel in Porto Heli, Greece.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://shop.madebychoros.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-15.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                    <small class="blackFontColor eshop-label"><b>E-SHOP</b></small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Choros</h5>
+                    <p class="grayFontColor">An e-shop with custom-made furniture for custom-made experiences.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://faristonevillas.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-10.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Fari Stone Villas</h5>
+                    <p class="grayFontColor">A website with luxury & private suites in Thassos, Greece.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://arifoods.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-17.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>ARI Foods</h5>
+                    <p class="grayFontColor">A website to experience the authentic taste of Greece.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://qualcofoundation.com/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-20.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>Qualco Foundation</h5>
+                    <p class="grayFontColor">A website that promotes the transition to environmental & social sustainability.</p>
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="https://www.luminart.gr/" target="_blank">
+                  <div class="image-view">
+                    <img src="F:\CV\CV\img-21.jpg" alt="img">
+                    <small class="view-project beigeFontColor blackBackgroundColor Italiana displaydesktop">VIEW PROJECT</small>
+                  </div>
+                  <div class="title-description">
+                    <h5>LuminArt</h5>
+                    <p class="grayFontColor">A website showing that light is the most elegant form of art.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- my-background -->
+        <div id="my-background" class="darkerBeigeBackgroundColor">
+          <div class="croppedContent">
+            <h1 class="Italiana align-right">My<br>background</h1>
+            <div class="background-text align-right">
+              <p>More details about my education & acquired professional expertise!</p>
+            </div>
+          </div>
+          
+          <div class="croppedContent all-years-container">
+            <div class="all-years col-lg-12 displayflex panel">   
+              <div class="col-lg-7">
+                <div class="background-content">
+                  <ul class="nav nav-tabs">
+                    <li id="first-tab">
+                      <a data-toggle="tab" href="#year1">
+                        <div class="animation-row displaydesktop grayBackgroundColor"></div>
+                        <div class="title-desc displayflex">
+                          <h4 class="blackFontColor">2020</h4>
+                          <small class="blackFontColor">Bachelor's degree</small>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#year2">
+                        <div class="animation-row displaydesktop grayBackgroundColor"></div>
+                        <div class="title-desc displayflex">
+                          <h4 class="blackFontColor">2021</h4>
+                          <small class="blackFontColor">Udemy courses</small>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a data-toggle="tab" href="#year3">
+                        <div class="animation-row displaydesktop grayBackgroundColor"></div>
+                        <div class="title-desc displayflex">
+                          <h4 class="blackFontColor">2022</h4>
+                          <small class="blackFontColor">Master's degree</small>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="active">
+                      <a data-toggle="tab" class="active" href="#year4">
+                        <div class="animation-row displaydesktop grayBackgroundColor"></div>
+                        <div class="title-desc displayflex">
+                          <h4 class="blackFontColor">2023</h4>
+                          <small class="blackFontColor">Work experience</small>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              
+                <div class="tab-content">
+                  <div id="year1" class="tab-pane fade">
+                    <div class="col-lg-12 displayflex year-container">
+                      <div class="col-lg-3 img-wrap-container">
+                        <div id="wrap" class="img-wrap circle"></div>
+                        <a href="https://www.csd.auth.gr/en/" class="tab-link displayflex" target="_blank">
+                          <div id="wrap" class="img-wrap">
+                            <img src="F:\CV\CV\auth.png" alt="icon">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-9">
+                        <h3 class="Italiana">AUTh</h3>
+                        <div class="text-content">
+                          I graduated from the Aristotle University of Thessaloniki (AUTh) where I got my bachelor's degree in Informatics (8.41/10).<br><br>
+                          My specialization field is Information Systems.
+                        </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div id="year2" class="tab-pane fade">
+                    <div class="col-lg-12 displayflex year-container">
+                      <div class="col-lg-3 img-wrap-container">
+                        <div id="wrap" class="img-wrap circle"></div>
+                        <a href="https://www.udemy.com/" class="tab-link displayflex" target="_blank">
+                          <div id="wrap" class="img-wrap">
+                            <img src="F:\CV\CV\udemy.png" alt="icon">
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-lg-9">
+                          <h3 class="Italiana">Udemy courses</h3>
+                          <div class="text-content">
+                            I've actively engaged with Udemy courses, including:
+                            <div class="list">														
+                              <div class="list-row">
+                                <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                <p class="lighterBlackFontColor">10/2020: Become a Wordpress Developer: Unlocking power with code, Udemy</p>
+                              </div>	
+                              <div class="list-row">
+                                <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                <p class="lighterBlackFontColor">12/2020: Angular - The complete Guide (2021 Edition), Udemy</p>
+                              </div>	
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div id="year3" class="tab-pane fade">
+                    <div class="col-lg-12 displayflex year-container">
+                      <div class="col-lg-3 img-wrap-container">
+                        <div id="wrap" class="img-wrap circle"></div>
+                        <a href="https://www.eap.gr/en/" class="tab-link displayflex" target="_blank">
+                          <img src="F:\CV\CV\eap.png" alt="icon">
+                        </a>
+                      </div>
+                      <div class="col-lg-9">
+                        <h3 class="Italiana">Hellenic Open University</h3>
+                        <div class="text-content">
+                          I have started my master's degree in "Data Science and Machine Learning" in the Hellenic Open University.<br><br>
+                          This program is designed to cultivate a deep understanding and expertise in state-of-the-art methods and computing tools in Data Science and Machine Learning. It focuses on hands-on computational applications of these methods, utilising data from all modern scientific fields.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="year4" class="tab-pane fade active show">
+                    <div class="col-lg-12 displayflex year-container">
+                        <div class="col-lg-3 img-wrap-container">
+                          <div id="wrap" class="img-wrap circle"></div>
+                          <a href="https://kukarika.com/" class="tab-link displayflex" target="_blank">
+                            <div id="wrap" class="img-wrap myBox">
+                              <img src="F:\CV\CV\kukarika.svg" alt="icon">
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-lg-9">
+                          <h3 class="Italiana">kukarika</h3>
+                          <p class="grayFontColor"><i>Web developer (since April 2021)</i><br><br>
+                            <div class="text-content">
+                              My main tasks in the company include the:
+                              <div class="list">														
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Development of new websites & e-shops</p>
+                                </div>	
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Creation of mostly custom themes</p>
+                                </div>	
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Working with custom post types, ACF fields</p>
+                                </div>
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Transformation of designs from XD files into dynamic, live websites</p>
+                                </div>
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Maintenance</p>
+                                </div>	
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Performance optimization</p>
+                                </div>	
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Content modification of existing websites</p>
+                                </div>	
+                                <div class="list-row">
+                                  <img src="F:\CV\CV\rhombus.svg" class="rhombus" alt="circle">
+                                  <p class="lighterBlackFontColor">Collaboration with designers and clients to turn design files into elegant websites</p>
+                                </div>	
+                              </div>	
+                              The technologies I mainly use are Wordpress (complemented by plugins), Woocommerce, HTML, CSS, Javascript, PHP & Adobe XD.
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>  
+            <div class="col-lg-5"></div>          
+          </div>
+          </div>
+        </div>
+
+        <a href="#home" id="back-to-top">
+          <img src="F:\CV\CV\top_icon.svg" alt="image">
+        </a>
+      </div>
+    </div>
+    </main>
+
+    <footer class="blackBackgroundColor">
+      <div class="col-lg-12 displayflex croppedContent">
+        <div class="col-lg-6 first-footer-col displayflex">
+          <a href="#" id="logo-link"><img src="F:\CV\CV\logo.png" alt="logo" id="logo"></a>
+          <p class="darkerBeigeFontColor copyright displaydesktop">© 2023 Designed & Developed by Natalia Gkotovou</p>
+        </div>
+        <div class="col-lg-3 second-footer-col">
+            <p class="whiteFontColor footer-title">Site</p>
+            <a href="#home" class="whiteFontColor footer-link">Home</a>
+            <a href="#about-me" class="whiteFontColor footer-link">About me</a>
+            <a href="#my-portfolio" class="whiteFontColor footer-link">My portfolio</a>
+            <a href="#my-background" class="whiteFontColor footer-link">My background</a>
+        </div>
+        <div class="col-lg-3 third-footer-col">
+          <div class="contact-info displayflex">
+            <div class="contact-top">
+              <p class="whiteFontColor footer-title">Email</p>
+              <p class="whiteFontColor">
+                <a href="mailto:n.gkotovou@gmail.com" class="whiteFontColor footer-link">n.gkotovou@gmail.com</a>
+              </p>
+            </div>
+
+            <div class="contact-bottom">
+              <p class="whiteFontColor footer-title">Social media</p>
+              <p class="whiteFontColor">
+                <a href="https://www.linkedin.com/in/natalia-gkotovou" target="_blank" class="whiteFontColor footer-link">Linkedin</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="darkerBeigeFontColor copyright displaymobile">© 2023 Designed & Developed by Natalia Gkotovou</p>
+    </footer>
+</body>
+</html>
+
+<script>
+
+jQuery(document).ready(function() {
+  var lastScrollTop = 0;
+    jQuery(window).scroll(function(event){
+       var st = jQuery(this).scrollTop();
+       if (st > lastScrollTop){
+         jQuery('body').addClass('scrolled');
+       } else {
+         jQuery('body').removeClass('scrolled');
+       }
+    });
+
+    // on load check
+    var lastScrollTop = 0;
+    var st = jQuery(this).scrollTop();
+    if (st > lastScrollTop){
+        jQuery('body').addClass('scrolled');
+    } else {
+        jQuery('body').removeClass('scrolled');
+    }
+
+});
+
+  jQuery('#first-tab').click();
+  jQuery('#projects-slider').not('.slick-initialized').slick({
+        arrows: true,
+        infinite: false,
+        slidesToShow: 1.5,
+        slidesToScroll: 1,
+        dots: false
+    });
+
+
+  var $status = jQuery('.pagingInfo');
+var $slickElement = jQuery('#projects-slider');
+
+$slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  if (i<10) {
+    $status.text( '0' + i + ' / ' + 15);
+  }else{
+    $status.text(i + ' / ' + 15);
+  }
+});
+
+$slickElement.slick({
+  autoplay: true,
+  dots: true
+});
+
+
+</script>
+
+
+
+<script>
+  //Function to reveal the SVG line gradually as the user scrolls
+  function revealLineOnScroll() {
+    const path = document.getElementById("pathToReveal");
+    const pathLength = path.getTotalLength();
+
+    path.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    path.style.strokeDashoffset = pathLength;
+
+    function updateDashOffset() {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const svgTop = document.getElementById("svgPath").getBoundingClientRect().top;
+      const isVisible = svgTop - windowHeight < 0;
+
+      if (isVisible) {
+        const progress = (windowHeight - svgTop) / windowHeight;
+        const offset = (1 - progress) * pathLength;
+        path.style.strokeDashoffset = Math.max(0, offset);
+      }
+    }
+    window.addEventListener("scroll", updateDashOffset);
+  }
+
+  window.addEventListener("load", revealLineOnScroll);
+
+</script>
+
+
+<script>
+  // animations
+  function debounce(func, wait = 3, immediate = true) {
+    var timeout;
+    return function() {
+      var context = this, args = arguments;
+      var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+
+  const headlineSlideIn = function() {
+    headline.classList.add('header-slide-in');
+  }
+
+  const subheadlineSlideIn = function() {
+    subheadline.classList.add('header-slide-in');
+  }
+
+  const panels = document.querySelectorAll('.panel');
+
+  const panelSlideIn = function() {
+    // for each panel, check if window bottom has scrolled past start of panel -> if yes, add .panel-fade-in class
+    panels.forEach(panel => {
+        const slideInAt = (window.scrollY + window.innerHeight) - panel.offsetHeight / 5;
+        const panelMidpoint = panel.offsetTop + panel.offsetHeight / 5;
+        if (slideInAt > panelMidpoint) {
+        panel.classList.add('panel-fade-in');
+        }
+    })
+  }
+
+  window.addEventListener('scroll', debounce(function() {
+    panelSlideIn();
+  }));
+
+</script>
