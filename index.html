@@ -223,6 +223,9 @@
 
         .menu-link {
           background-image: linear-gradient(transparent 0%, transparent 90%, #313942 80%, #313942 90%) !important;
+          background-image: -moz-linear-gradient(transparent 0%, transparent 90%, #313942 80%, #313942 90%) !important;
+          /* background-image: linear-gradient(transparent 0%, transparent 90%, #313942 80%, #313942 90%) !important; */
+
           background-repeat: no-repeat !important;
           background-size: 0% 22% !important;
           background-position-x: right !important;
@@ -244,6 +247,10 @@
           flex-direction: row;
           justify-content: center;
           align-items: flex-end;
+        }
+
+        .my-info h6 {
+          text-align: center;
         }
 
         .main-image-container img {
@@ -922,15 +929,19 @@
             display: none;
           }
 
+          .nav-tabs a h4 {
+            opacity: 0.45;
+          }
+
           #my-background li::before {
             content: "";
             position: absolute;
-            right: -40px !important;
+            right: -47px !important;
             bottom: 33px;
             right: 0;
             margin: auto;
             height: 6px;
-            width: 59px;
+            width: 50px;
             border-bottom: 1px solid #c4c1ba;
           }
 
@@ -1029,7 +1040,7 @@
 
           .nav-tabs li {
             display: inline-block;
-            margin-right: 26px;
+            margin-right: 43px;
           }
 
           .nav-tabs a.active h4,
