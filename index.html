@@ -214,6 +214,18 @@
           width: 73px;
         }
 
+        #projects-slider button {
+          opacity: 0 !important;
+          pointer-events: none !important;
+          transition: .3s;
+        }
+
+        #projects-slider button.slick-disabled {
+          opacity: 1 !important;
+          pointer-events: auto !important;
+          transition: .3s;
+        }
+
         #menu-items a {
           display: block;
           color: #313942;
