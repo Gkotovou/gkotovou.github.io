@@ -213,17 +213,17 @@
         #logo {
           width: 73px;
         }
-        
-        #projects-slider:hover .slick-prev.slick-disabled,
-        #projects-slider:hover .slick-next.slick-disabled,
+
         #projects-slider button {
-          opacity: 0 !important;
+          opacity: 1 !important;
           pointer-events: none !important;
           transition: .3s;
         }
 
+        #projects-slider:hover .slick-prev.slick-disabled,
+        #projects-slider:hover .slick-next.slick-disabled,
         #projects-slider button.slick-disabled {
-          opacity: 1 !important;
+          opacity: 0 !important;
           pointer-events: auto !important;
           transition: .3s;
         }
